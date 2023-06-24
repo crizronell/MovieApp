@@ -25,30 +25,6 @@ async function MovieDetails({ params }) {
     (item) => item.name === "Official Trailer"
   );
 
-  console.log(OfficialTrailer);
-
-  const findIndex = trailer.results.findIndex(
-    (e) => e.name === "Official Trailer"
-  );
-
-  if (!OfficialTrailer) {
-    console.log(" Official trailer");
-  } else {
-    console.log(" No Official trailer");
-  }
-
-  console.log(findIndex);
-
-  for (var i = 0; i < trailer.results.length; i++) {
-    if (trailer.results[i].name === "Official Trailer") {
-      console.log("naay official trailer");
-      break;
-    } else if (!OfficialTrailer) {
-      console.log("kuhaa ang 1st array kay walay available official trailer");
-      break;
-    }
-  }
-
   return (
     <div className=" p-4 mx-auto container">
       <h1 className="text-white text-2xl">{movie.title}</h1>
