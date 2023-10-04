@@ -17,8 +17,9 @@ async function Banner() {
         className="text-white relative w-auto h-[35rem] cursor-pointer 
        ">
         <Image
-          src={imagePath + Getrandom.backdrop_path}
           fill
+          className="w-auto"
+          src={imagePath + Getrandom.backdrop_path}
           alt={Getrandom.id}
           quality={100}
           priority></Image>
