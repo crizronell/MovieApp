@@ -19,6 +19,7 @@ async function Upcoming() {
               src={imagePath + movie.backdrop_path}
               width={500}
               height={500}
+              quality={100}
               alt={movie.id}
               className=" cursor-pointer w-auto max-h-40 object-contain hover:scale-105 hover:ease-in delay-75 duration-200"
             />
